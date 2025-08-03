@@ -5,14 +5,49 @@
   <meta charset="UTF-8">
   <title>Little Web Design</title>
   <style>
+
+             @keyframes spin {
+               
+              0% {transform: rotate(0deg); content: url(/spinner-icon.png);} 
+            100% {transform: rotate(360deg); content: url(/spinner-icon.png) ;} 
+        }
+
+        .spinner-icon{
+           margin-left: 200px;
+           float: left;
+           width: 50px;
+           font-size: 1px;
+           margin-top: 0px;
+           animation: spin 7s linear infinite;
+        }
+
+                     @keyframes bell {
+               
+                 0% {transform: rotate(45deg); content: url(/bell-icon.png);} 
+                 25% {transform: rotate(0deg); content: url(/bell-icon.png);} 
+                 50% {transform: rotate(-45deg); content: url(/bell-icon.png) ;} 
+                 75% {transform: rotate(0deg); content: url(/bell-icon.png) ;} 
+                 100% {transform: rotate(45deg); content: url(/bell-icon.png) ;} 
+        }
+
+        .bell-icon{
+           margin-left: 200px;
+           float: left;
+           width: 50px;
+            font-size: 1px;
+            margin-top: 0px;
+            animation: bell 4s linear infinite;
+        }
+
     div{
      text-align: center;
-     
+   
     }
 
 
 
       .stars-group{
+        font-size: 2px;
         transform: rotateY(180deg);
       }
 
@@ -21,9 +56,11 @@
       content: url(colored-diamond.png);
     }
 
-    #body{
-     font-size: 70%;
+   div #body{
+     width: 55%;
     }
+
+    
 
     a{
       color: #dbeaee;;
@@ -40,14 +77,14 @@
    }
 
     .star{
-     
+       
         border-collapse: collapse;
-        margin: 10px;
+        margin: 5px;
         display: inline-block;
     }
 
     p,h1,h2{
-      font-family: sans-serif;
+      text-align: center;
       margin: 50px;
       padding: 0;
       border: 100;
@@ -56,26 +93,41 @@
       text-align: center;
     }
 
-     h1{
-      font-family: serif;
+     h1 {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-family : serif,'Bitter';
       font-size: 30px;
      }
 
      h2{
-      font-family:serif;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-family:serif,'Bitter';
       font-size: 30px;
      }
 
-    nav{
-     text-align: center;
-      background-color: #464646;
-     }
-    li{
-   margin: 20px;
-  display: inline-block;
+     p{
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+        font-family: 'Lato';
      }
 
-    li:hover{
+    nav{
+      text-align: center;
+      background-color: #464646;
+     }
+
+    nav li{
+      height: 20px;
+      margin: 10px;
+      display: inline-block;
+     }
+
+    nav li:hover{
       background-color:#464646;
      }
     
@@ -85,7 +137,8 @@
       background-color:#464646;
       }
     
-    h2~p{      
+    h2~p{ 
+      
        padding: 10px 20px;
       text-transform: uppercase;
       border-radius: 10px;
@@ -99,8 +152,125 @@
      	    	color: #425c63;
     		background: #2874a6d7 ;
     }
-    
-     
+
+    .container{
+      flex-grow: 0;
+      margin-right: auto;
+      text-align: center;
+      margin-left: auto;
+	width: 70%;
+	height: 330px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+    transition: transform .5s ease-in-out;
+}
+
+.img1{
+  flex-grow: 2;
+  content: url(/brand.jpg);
+  display: flex;
+  flex-direction: row;
+}
+
+.img2{
+  flex-grow: 2;
+  content: url(/woman-sitting-cafe-drinking-coffee-working-computer.jpg);
+}
+
+.img3{
+  flex-grow: 2;
+  content: url(/pexels-photo-3183150.jpeg);
+}
+
+.img4{
+  flex-grow: 2;
+  content: url(/drawing.avif);
+}
+
+
+
+
+    .container:hover{
+
+   transform: scale(1.2);
+
+}
+
+.text{
+  width: 55%;
+}
+
+ .container h1{
+  margin: 0px;
+ }
+
+
+   @media screen and (max-width: 840px) {
+
+    .container:hover{
+      transform: none;
+    }
+
+    .bell-icon{
+      margin-left: 150px;
+    }
+
+    .spinner-icon{
+      margin-left: 150px;
+    }
+
+         .container{
+          transform: none;
+          margin-top: 0px;
+        	height: 370px;
+         }
+
+         .img2{
+          content: none;
+         }
+
+         .img4{
+          content: none;
+         }
+
+         .img5{
+          flex-grow: 1.5;
+          content: url(/woman-sitting-cafe-drinking-coffee-working-computer.jpg);
+         }
+
+         .img6{
+          flex-grow: 1.5;
+          content: url(/drawing.avif);
+         }
+
+         .img1{
+          flex-grow: 1.5;
+         }
+         
+         .img3{
+          flex-grow: 1.5;
+         }
+   }
+
+    @media screen and (max-width: 700px){
+       .container{
+        display: block;
+        width: 100%;
+        height: auto;
+       }
+
+       .bell-icon{
+        margin-left: 80px;
+       }
+
+       .spinner-icon{
+        margin-left: 80px;
+       }
+       
+    }
+
 
   </style>
 
@@ -148,9 +318,9 @@
 
       <h1>Little Web Design Agency</h1>
 
-      <p>We are a small web design agency based in Sheffield, UK. Over the last years we've worked with many companies and made a reputation for <br> building websites that look great and are easy-to-use.</p>
+      <div class="spinner-icon"></div><p  >We are a small web design agency based in Sheffield, UK. Over the last years we've worked with many companies and made a reputation for  building websites that look great and are easy-to-use.</p></div>
 
-      <p>We always take and shape your ideas and focus on simple, elegant and usable solutions. We bring your project to life with clean and standards-<br>based code using the latest techniques and technologies.</p>
+      <div class="bell-icon"></div><p >We always take and shape your ideas and focus on simple, elegant and usable solutions. We bring your project to life with clean and standards-based code using the latest techniques and technologies.</p>
 
       <h2 >Our services</h2>
 
@@ -160,6 +330,40 @@
 
       <p>Content</p>
   </div>
+
+  <div>
+    <h1>We Design Experiences</h1>
+ </div>
+ <div class="container">
+          <h1 >Branding</h1>
+<p  >Ignite your brand's potential and captivate audiences with our strategic design approach.</p>
+<p class="img1"></p>
+</div>
+
+ <div class="container">
+  <p class="img2"></p>
+          <h1 >Web design</h1>
+<p  >Stand out with our innovative website design that combine aesthetics and usability.</p>
+ <p class="img5"></p>
+
+</div>
+
+ <div class="container">
+          <h1 >UI/UX design</h1>
+<p  > Maximize user engagement with our cutting-edge<br> UI/UX design that align with user needs.<br>
+        We deliver digital solutions that blend advanced UI/UX design with conversion-driven strategies to inspire, captivate, and drive results.</p>
+<p class="img3"></p>
+</div>
+
+ <div class="container">
+  <p class="img4"></p>
+          <h1 >Custom Illustrations</h1>
+<p  >One of our favourite things to do is design custom illustrations. It's a process that starts on paper with brainstorming and sketching. 
+         Concepts are taken to the iPad to be sketched in before landing in Adobe Illustrator </p>
+          <p class="img6"></p>
+
+</div>
+ 
   <footer>
     <p>&#169; 2015 Little Web Design Agency</p>
   </footer>
