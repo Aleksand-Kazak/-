@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        label{
+             color:  #444;
+        }
+
+        legend{
+            color: #555;
+        }
+
+        input{
+            margin: 10px;
+            padding-right: 10px;
+        }
+     body{
+       
+        height: 40px;
+        background-color:  #ddd;
+     }
+
+     fieldset{
+         border-color:  #ddd;
+       margin: 20px;
+     }
+
+
+     select:invalid{
+           border: 2px solid red;
+     }
+
+     select:valid{
+           border: 2px solid #007BFF
+     }
+
+     form{
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        background-color: white;
+     }
+
+     div{
+        display: flex;
+        flex-direction: row;
+     }
+
+    .tt{
+        border: #f5f5f5;
+        background-color: #007BFF;
+        color: white;
+     }
+
+    .tt:hover{
+        background-color: #0056b3;
+      }
+
+      .date[value="date"]:checked ~ .time{
+        display: block;
+        color: ffOOOd;
+      }
+
+      input:focus, input:focus-visible, select:focus{
+        border-color: #ff000d;
+        outline: #ff000d;
+      }
+
+       input:invalid {
+            border: 2px solid red;
+        }
+
+         input:valid {
+            border: 2px solid #007BFF
+        }
+
+     .time {
+        display: none;
+      }
+
+     input[type="date"]:checked ~ .time{
+        display: block;
+      }
+
+      .te{
+        display: flex;
+        flex-direction: row;
+      }
+
+      .rad{
+        display: inline;
+      }
+
+      .rade{
+        display: none;
+      }
+
+
+
+
+
+
+      
+   @media screen and (max-width: 600px) {
+
+       form{
+        width: 300px;
+       }
+
+       .te{
+        display: flex;
+        flex-direction: column;
+       }
+
+       .rad{
+        display: none;
+
+       }
+
+       .rade{
+        display: block;
+       }
+
+
+
+
+      fieldset{
+        margin: 10px;
+        height: 250px;
+      }
+
+      h1{
+        height: 20px;
+      }
+
+
+      .time{
+        display: block;
+      }
+
+       
+
+      
+
+}
+
+
+    </style>
+</head>
+<body>
+    <form method="get" action="https://fe.it-academy.by/TestForm.php">
+        <h1 style="text-align: center; height: 10px;">Регистрация на онлайн-курс</h1><br>
+        <fieldset> 
+ <legend>Информация о вас</legend> 
+ <label>ФИО*
+ <input type="text" name="fam" style="width: 90%; height: 20px;" required pattern="[A-Za-zА-Яа-яЁё\s]+" min="10" placeholder="Иван Иванович Иванов" required > 
+ </label><br>  
+ <div class="te">
+  <label>
+   Email*<br>
+    <input type="email" required style="height: 20px;" placeholder="example@gmail.com" >
+  </label><br>
+  <label style="margin-left: 50 px; height: 20px;" >Пароль*<br>
+    <input style="width: 90%; height: 20px;" type="text" name="password" type="password" name="im"  minlength="8" required placeholder="Не менее 8 символов " >
+  </label>
+  </div>
+   </fieldset>
+   <fieldset> 
+     <legend>Выбор куса</legend> 
+     <label style="margin: 10px;"  >
+        Курс*<br>
+      <select class="selecte"   style="margin: 10px; width: 90%; height: 25px; " required>
+        <option value="first" selected disabled>Выберите курс</option>
+        <option value="two">Веб-разработка</option>
+        <option  value="three">Data Science</option>
+        <option  value="last"> Графический дизайн</option>
+      </select>
+     </label>
+     <div class="date">
+      <label  class=".datte">
+   Дата Начала*<br>
+    <input  type="date" required style=" width: 88%; height: 20px;" min="2024-01-01" value="date" name="date">
+  </label>
+  </div>
+  <div class="time">
+  <label >
+    Предпочитаемое время занятий (между 13:00 и 20:00)<br>
+    <input type="time" min="13:00" max="20:00" value="13:00" name="time" required>
+  </label>
+  </div>
+  </fieldset>
+   <fieldset> 
+    <legend>Дополнительно</legend> 
+  
+    <label>
+        Опыт в IT:<br class="rad" >
+<div class="rad">
+        <input type="radio"  value="1">Нет опыта
+        <input type="radio"  value="2">Начинающий
+        <input type="radio"  value="3">Опытный
+        <br>
+</div>
+
+<div class="rade">
+        <input type="radio"  value="1">Нет опыта<br>
+        <input type="radio"  value="2">Начинающий<br>
+        <input type="radio"  value="3">Опытный<br>
+        <br>
+</div>
+        <label>Я согласен на обработку персональный данных*
+    <input type="checkbox" required>
+    </label><br>
+</fieldset><br>
+ <input class="tt" type="submit" value="Отправить заявку " style="width: 95%; height: 40px; border-radius: 20px; text-align: center;">
+        
+
+
+    </form>
+</body>
+</html>
