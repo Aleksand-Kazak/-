@@ -85,14 +85,6 @@
         flex-direction: row;
       }
 
-      .rad{
-        display: inline;
-      }
-
-      .rade{
-        display: none;
-      }
-
       input[type="text"]{
         width: 500px; 
         height: 30px;
@@ -108,13 +100,12 @@
 
        input[type="password"]{
        
-         height: 20px;
          width: 196px; 
          height: 30px;
        }
        
        .password{
-        margin-left: 100px;
+        margin-left: 70px;
        }
 
        .selecte{
@@ -131,7 +122,8 @@
        }
 
        input[type="radio"]{
-        margin-right: 70px;
+        margin-right: 50px;
+        display: inline-block;
        }
 
        .ee{
@@ -142,6 +134,9 @@
         display: block;
        }
 
+       .rad{
+        display: inline;
+       }
 
 
 
@@ -149,6 +144,10 @@
 
       
      @media screen and (max-width: 600px) {
+
+      h1{
+        font-size: 30px;
+      }
 
        form{
         width: 300px;
@@ -198,14 +197,8 @@
         flex-direction: column;
        }
 
-       .rad{
-        display: none;
 
-       }
 
-       .rade{
-        display: block;
-       }
 
 
 
@@ -229,7 +222,9 @@
      }
 
 
-      
+     .rad{
+      display: grid;
+     }
        
 
       
@@ -283,20 +278,14 @@
             <legend>Дополнительно</legend> 
   
             <label>
-        Опыт в IT:<br class="rad" >
+        Опыт в IT:<br>
         <div class="rad">
         Нет опыта<input type="radio"  value="1">
         Начинающий<input type="radio"  value="2">
         Опытный<input type="radio"  value="3">
         <br>
        </div>
-
-      <div class="rade">
-        Нет опыта<input type="radio"  value="1"><br>
-        Начинающий<input type="radio"  value="2"><br>
-        Опытный<input type="radio"  value="3"><br>
-        <br>
-      </div>
+      </label>
         <label>Я согласен на обработку персональный данных*
           <input type="checkbox" required>
            </label><br>
