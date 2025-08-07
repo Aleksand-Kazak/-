@@ -101,6 +101,10 @@
        input[type="email"]{
           height: 30px;
        }
+        input[type="time"]{
+          width: 500px; 
+          height: 30px;
+       }
 
        input[type="password"]{
        
@@ -130,21 +134,21 @@
         margin-right: 70px;
        }
 
-         input[type="date"]:invalid~.time{
-          display: none;
-        }
+       .ee{
+        display: none;
+       }
 
-        input[type="date"]:valid ~ .time{
-          display: block;
-         }
-       
+       input[type="date"]:valid ~ .ee {
+        display: block;
+       }
+
 
 
 
 
 
       
-   @media screen and (max-width: 600px) {
+     @media screen and (max-width: 600px) {
 
        form{
         width: 300px;
@@ -264,18 +268,16 @@
                 <option  value="last"> Графический дизайн</option>
                </select>
             </label>
-     <div class="date">
-          <label  class=".datte">
+         <label>
              Дата Начала*<br>
              <input  type="date" required min="2024-01-01" value="date1" name="date2">
-           </label>
-       </div>
-       <div class="time">
-              <label  >
-             Предпочитаемое время занятий (между 13:00 и 20:00)<br>
-               <input type="time" min="13:00" max="20:00" value="13:00" name="time" required>
-             </label>
-       </div>
+           <br>
+            
+              <div class="ee"> Предпочитаемое время занятий (между 13:00 и 20:00)<br>
+               <input type="time" min="13:00" max="20:00" value="13:00" name="time" required  Предпочитаемое время занятий (между 13:00 и 20:00) >
+              </div>
+         </label>
+             
       </fieldset>
    <fieldset> 
             <legend>Дополнительно</legend> 
