@@ -6,6 +6,12 @@
     <title>Document</title>
     <style>
 
+      h1{
+        margin: 30px;
+        text-align: center;
+         height: 10px;
+      }
+
 
         label{
              color:  #444;
@@ -83,7 +89,7 @@
         display: none;
       }
 
-     input[type="date"]:checked ~ .time{
+     input[value="date1"]:checked ~ .time{
         display: block;
       }
 
@@ -100,6 +106,43 @@
         display: none;
       }
 
+      input[type="text"]{
+        width: 500px; 
+        height: 30px;
+      }
+
+       input[type="email"]{
+          height: 30px;
+       }
+
+       input[type="password"]{
+       
+         height: 20px;
+         width: 196px; 
+         height: 30px;
+       }
+       
+       .password{
+        margin-left: 100px;
+       }
+
+       .selecte{
+         margin: 5px; 
+         width: 90%;
+         height: 30px; 
+         width: 520px;
+       }
+
+       
+       input[type="date"]{
+         width: 500px ;
+         height: 30px;
+       }
+
+       input[type="radio"]{
+        margin-right: 70px;
+       }
+       
 
 
 
@@ -111,6 +154,45 @@
        form{
         width: 300px;
        }
+
+             input[type="text"]{
+        width: 200px; 
+        height: 30px;
+      }
+
+       input[type="email"]{
+          height: 30px;
+          width: 200px;
+       }
+
+       input[type="password"]{
+       
+         height: 20px;
+         width: 200px; 
+         height: 30px;
+       }
+       
+       .password{
+        margin-left: 0px;
+       }
+
+       .selecte{
+         margin: 5px; 
+         height: 30px; 
+         width: 200px;
+       }
+
+       
+       input[type="date"]{
+         width: 200px ;
+         height: 30px;
+       }
+
+       input[type="time"]{
+         width: 200px ;
+         height: 30px;
+       }
+
 
        .te{
         display: flex;
@@ -142,7 +224,13 @@
       .time{
         display: block;
       }
+      
+     input{
+      margin-left: 0px;
+     }
 
+
+      
        
 
       
@@ -154,72 +242,70 @@
 </head>
 <body>
     <form method="get" action="https://fe.it-academy.by/TestForm.php">
-        <h1 style="text-align: center; height: 10px;">Регистрация на онлайн-курс</h1><br>
+            <h1>Регистрация на онлайн-курс</h1><br>
         <fieldset> 
- <legend>Информация о вас</legend> 
- <label>ФИО*
- <input type="text" name="fam" style="width: 90%; height: 20px;" required pattern="[A-Za-zА-Яа-яЁё\s]+" min="10" placeholder="Иван Иванович Иванов" required > 
- </label><br>  
- <div class="te">
-  <label>
-   Email*<br>
-    <input type="email" required style="height: 20px;" placeholder="example@gmail.com" >
-  </label><br>
-  <label style="margin-left: 50 px; height: 20px;" >Пароль*<br>
-    <input style="width: 90%; height: 20px;" type="text" name="password" type="password" name="im"  minlength="8" required placeholder="Не менее 8 символов " >
-  </label>
-  </div>
-   </fieldset>
+         <legend>Информация о вас</legend> 
+           <label>ФИО*
+           <input type="text" name="fam"  required pattern="[A-Za-zА-Яа-яЁё\s]+" min="10" placeholder="Иван Иванович Иванов" required > 
+           </label><br>  
+      <div class="te">
+            <label>
+             Email*<br>
+           <input type="email" required  placeholder="example@gmail.com" >
+             </label><br>
+           <label class="password">Пароль*<br>
+          <input type="password" name="password" type="password" name="im"  minlength="8" required placeholder="Не менее 8 символов " >
+          </label>
+      </div>
+         </fieldset>
    <fieldset> 
-     <legend>Выбор куса</legend> 
-     <label style="margin: 10px;"  >
-        Курс*<br>
-      <select class="selecte"   style="margin: 10px; width: 90%; height: 25px; " required>
-        <option value="first" selected disabled>Выберите курс</option>
-        <option value="two">Веб-разработка</option>
-        <option  value="three">Data Science</option>
-        <option  value="last"> Графический дизайн</option>
-      </select>
-     </label>
+         <legend>Выбор куса</legend> 
+           <label style="margin: 10px;"  >
+               Курс*<br>
+               <select class="selecte" required>
+                <option value="first" selected disabled>Выберите курс</option>
+                <option value="two">Веб-разработка</option>
+                <option  value="three">Data Science</option>
+                <option  value="last"> Графический дизайн</option>
+               </select>
+            </label>
      <div class="date">
-      <label  class=".datte">
-   Дата Начала*<br>
-    <input  type="date" required style=" width: 88%; height: 20px;" min="2024-01-01" value="date" name="date">
-  </label>
-  </div>
-  <div class="time">
-  <label >
-    Предпочитаемое время занятий (между 13:00 и 20:00)<br>
-    <input type="time" min="13:00" max="20:00" value="13:00" name="time" required>
-  </label>
-  </div>
-  </fieldset>
+          <label  class=".datte">
+             Дата Начала*<br>
+             <input  type="date" required min="2024-01-01" value="date1" name="date2">
+           </label>
+       </div>
+       <div class="time">
+              <label  >
+             Предпочитаемое время занятий (между 13:00 и 20:00)<br>
+               <input type="time" min="13:00" max="20:00" value="13:00" name="time" required>
+             </label>
+       </div>
+      </fieldset>
    <fieldset> 
-    <legend>Дополнительно</legend> 
+            <legend>Дополнительно</legend> 
   
-    <label>
+            <label>
         Опыт в IT:<br class="rad" >
-<div class="rad">
-        <input type="radio"  value="1">Нет опыта
-        <input type="radio"  value="2">Начинающий
-        <input type="radio"  value="3">Опытный
+        <div class="rad">
+        Нет опыта<input type="radio"  value="1">
+        Начинающий<input type="radio"  value="2">
+        Опытный<input type="radio"  value="3">
         <br>
-</div>
+       </div>
 
-<div class="rade">
-        <input type="radio"  value="1">Нет опыта<br>
-        <input type="radio"  value="2">Начинающий<br>
-        <input type="radio"  value="3">Опытный<br>
+      <div class="rade">
+        Нет опыта<input type="radio"  value="1"><br>
+        Начинающий<input type="radio"  value="2"><br>
+        Опытный<input type="radio"  value="3"><br>
         <br>
-</div>
+      </div>
         <label>Я согласен на обработку персональный данных*
-    <input type="checkbox" required>
-    </label><br>
-</fieldset><br>
- <input class="tt" type="submit" value="Отправить заявку " style="width: 95%; height: 40px; border-radius: 20px; text-align: center;">
+          <input type="checkbox" required>
+           </label><br>
+     </fieldset><br>
+        <input class="tt" type="submit" value="Отправить заявку " style="width: 95%; height: 40px; border-radius: 20px; text-align: center;">
         
-
-
     </form>
 </body>
 </html>
