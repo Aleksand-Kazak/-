@@ -67,11 +67,6 @@
         background-color: #0056b3;
       }
 
-      .date[value="date"]:checked ~ .time{
-        display: block;
-        color: ffOOOd;
-      }
-
       input:focus, input:focus-visible, select:focus{
         border-color: #ff000d;
         outline: #ff000d;
@@ -84,14 +79,6 @@
          input:valid {
             border: 2px solid #007BFF
         }
-
-     .time {
-        display: none;
-      }
-
-     input[value="date1"]:checked ~ .time{
-        display: block;
-      }
 
       .te{
         display: flex;
@@ -142,6 +129,14 @@
        input[type="radio"]{
         margin-right: 70px;
        }
+
+         input[type="date"]:invalid~.time{
+          display: none;
+        }
+
+        input[type="date"]:valid ~ .time{
+          display: block;
+         }
        
 
 
