@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <title>Example</title>
+  <style>
+  #grid { 
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+     grid-template-columns:  minmax(300px, 1fr)  minmax(300px, 1fr) minmax(300px, 1fr)  minmax(300px, 1fr);
+    grid-gap: 100px;
+    }
+  #grid > div {
+    display: flex;
+    font-size: 5vw;
+    padding: .5em;
+    background: rgb(179, 175, 175);
+    text-align: center;
+        background-image: url(all.jpg);
+        
+  }
+
+  div{
+    min-width: 300px;
+    display: grid;
+  }
+
+  img{
+    width: 100%;
+    height: 100px;
+    opacity: 20%;
+  }
+
+  .add:hover{
+     transform: scale(106%);
+     box-shadow: 0 10px 90px rgba(0, 0, 0, 1);
+  }
+  </style>
+</head>
+<body>
+  <div id="grid">
+    <div class="add"><img src="skyi.jpg"></div>
+    <div class="add"><img src="skyi.jpg"></div>
+    <div class="add"><img src="skyi.jpg"></div>
+    <div class="add"><img src="skyi.jpg"></div>
+    <div class="add"><img src="skyi.jpg"></div>
+    <div class="add"><img src="skyi.jpg"></div>
+    <div class="add"><img src="skyi.jpg"></div>
+    <div class="add"><img src="skyi.jpg"></div>
+  </div>
+</body>
+</html>
