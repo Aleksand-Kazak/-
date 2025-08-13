@@ -8,68 +8,70 @@
 <body>
     <style>
 
+           .main{
+            position: relative;
+                    margin-left: 30%;
+        width: 400px;
+        height: 400px; 
 
-        .tex{
-            position: fixed;
-            top: 10px;
-        }
-
-        .text{
-           position: fixed;
-           bottom: 10px;
-        }
+           }
 
 
 
         .Yin{
+
             content: url(Yin_and_Yang.png);
-            position: fixed;
-              top: 400px;
-              left: 230px;
-   
+            position: absolute;
                  transition: transform .5s ease-in-out;
+                 z-index: 3;
+                 left: 130px;
+                 top: 200px;
             
         }
 
         .Woman{
             content: url(Man-and-woman.png);
-            position: fixed;
-             top: 200px;
-            left: 350px;  
-                transition: transform .5s ease-in-out;       
+            position: absolute;
+                transition: transform .5s ease-in-out;   
+                z-index: 2;    
+                left: 250px;
         }
 
         .No{      
             content: url(No_smoking.png);
-            position: fixed;
-             top: 250px;
-             left: 210px;
+            position: absolute;
                   transition: transform .5s ease-in-out;
+                  z-index: 4;
+                  left: 100px;
+                  top: 50px;
         }
 
         .toxic{
             content: url(toxic.png);
-            position: fixed;
-             top: 200px;
-              left: 130px;  
+            position: absolute;
                  transition: transform .5s ease-in-out;
+                 z-index: 1;
         }
 
         .toxic:hover{
           transform: scale(1.3  );
+          z-index: 5;
         }
 
         .No:hover{
          transform: scale(1.3);
+          z-index: 5;
         }
 
         .Woman:hover{
          transform: scale(1.3);
+          z-index: 5;
         }
 
         .Yin:hover{
          transform: scale(1.3);
          position: absolute;
+          z-index: 5;
         }
 
     </style>
