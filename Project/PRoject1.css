@@ -1,0 +1,309 @@
+
+
+  body, p, span, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+img{
+  width: 500px;
+}
+
+nav{
+  text-align: center;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-image: url(/12.jpg);
+  width: 100%;
+  background-color: cadetblue;
+  background-position: center;
+    text-align: center;
+    padding-bottom: 20px;
+    overflow: hidden;
+    height: 400px;
+}
+
+nav {
+    background: #464646; 
+}
+ul {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Bitter', serif;
+    font-size: 1.5em;
+}
+li {
+    display: inline-block;
+    padding: 20px;
+}
+li > a {
+    color: white;
+    text-decoration: none;
+}
+
+li:hover, li:hover > a {
+    color: #464646;
+    background: #dbeaee; ;
+}
+
+
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: #474747;
+    text-align: center;
+    padding: 20px 0;
+}
+h1, h2 {
+    font-family: 'Bitter', serif;
+    color: #464646;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px 0 30px;
+}
+
+h1 {
+    font-size: 2.6em;
+}
+h2 {
+    font-size: 2em;
+}
+
+footer {
+    background-color: #464646;
+    padding: 20px 0; 
+}
+
+footer p {
+    color: white;
+}
+#body {
+    width: 55%;
+    margin: 0 auto;
+}
+
+#body h2 ~ p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #425c63;
+    background: #dbeaee;
+    border-radius: 100px;
+    padding: 25px 0;
+    margin: 20px 0;
+}
+
+
+#body h2 ~ p:hover {
+    font-weight: 900;
+    color: #FFF;
+    background:rgb(140, 138, 138);
+    cursor: pointer;
+}
+
+
+
+ footer{
+  margin: 10px;
+  text-align: left;
+ }
+
+   article   body, ul, p, h1, h2{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    .description, .time, .price {
+      display: inline-block;
+      margin: 20px 0 20px 50px;
+    }
+
+    .description {
+      width: 40%;
+    }
+    .time, .price {
+      vertical-align: top;
+      padding-top: 20px;
+      width: 20%;
+      font-style: italic;
+      color: #0B5345
+    }
+
+    .title {
+      font-size: 40px;
+      color: #0B5345 ;
+    }
+    .steps, .price {
+      font-size: 25px;
+    }
+
+    header div:hover, article:hover {
+      background-color: #81aea52b;
+    }
+
+    * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle; height: 300px;}
+
+
+.slideshow-container {
+  min-width: 300px;
+  max-width: 100%;
+  max-height: 1000px; 
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+     @media screen and (max-width: 1500px) {
+       header div {
+          display: flex;
+          margin: 0px;
+             flex-direction: column;
+              flex: 0 0 100%;
+             box-sizing: border-box;
+           width: 100%;
+              
+            
+           
+       }
+        .description, .time, .price{
+          display: block;
+          width: 100%;
+        }
+
+        .time, .price{
+          display: inline-block;
+          width: 40%;
+          background-color: #81aea52b;
+          text-align: center;
+         font-size: 20px;
+          height: 40px;
+          font-weight:bold;
+           
+        }
+     
+            header div:hover, article:hover {
+      background-color: white;
+    }
+     }
+
+
+
+      @media screen and (max-width: 1000px) {
+           header div {
+            display: flex;
+          margin: 0px;
+             flex-direction: column;
+              flex: 0 0 100%;
+              width: 100%;
+               box-sizing: border-box;
+
+           }
+         .description, .time, .price{
+         display: block;
+         width: 100%;
+        }
+
+    header div:hover, article:hover {
+      background-color: white;
+    }
+    
+    .slideshow-container{
+      display: none;
+    }
+
+    .sss{
+      display: none;
+    }
+
+    
+}

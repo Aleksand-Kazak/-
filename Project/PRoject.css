@@ -1,0 +1,319 @@
+img{
+    width: 500px;
+    max-width: 100%;
+}
+ 
+    #grid {
+      display: grid;
+       gap: 90px;
+    }
+    #grid > div {
+      background: white;
+      text-align: center;
+    }
+
+    .block1{
+        position: relative;
+        grid-area: a;
+    }
+
+    .block2{
+        position: relative;
+        grid-area: b;
+    }
+    
+    .block3{
+        position: relative;
+        grid-area: c;
+    }
+    
+    .block4{
+        position: relative;
+        grid-area: d;
+    }
+    
+    .block5{
+        position: relative;
+        grid-area: e;
+    }
+    
+    .block6{
+        position: relative;
+        grid-area: f;
+    }
+
+        .block7{
+        position: relative;
+        grid-area: g;
+    }
+
+        .block8{
+        position: relative;
+        grid-area: h;
+    }
+
+        .block9{
+        position: relative;
+        grid-area: j;
+    }
+
+        .block10{
+        position: relative;
+        grid-area: k;
+    }
+
+            #grid {
+      display: grid;
+       grid-template-columns: repeat(3, minmax(250px, 1fr)) ;
+       grid-template-rows:repeat(3, minmax(250px, 1fr)) ;
+       gap: 40px;
+       grid-template-areas:
+      " a a g"
+      " c d h"
+      " e f j"
+      " b b k";
+    }
+
+
+            .block1  img:hover{
+        opacity: 1.1;
+     transform: scale(105%);
+    }
+
+    .block2  img:hover{
+        opacity: 1.1;
+     transform: scale(105%);
+    }
+    
+    .block3  img:hover{
+        opacity: 1.1;
+     transform: scale(105%);
+    }
+    
+    .block4  img:hover{
+        opacity: 1.1;
+     transform: scale(105%);
+    }
+    
+    .block5  img:hover{
+        opacity: 1.1;
+     transform: scale(105%);
+    }
+    
+    .block6  img:hover{
+        opacity: 1.1;
+     transform: scale(105%);
+    }
+
+        .block7  img:hover{
+        opacity: 1.1;
+     transform: scale(105%);
+    }
+    
+    .block8  img:hover{
+        opacity: 1.1;
+     transform: scale(105%);
+    }
+    
+    .block9  img:hover{
+        opacity: 1.1;
+     transform: scale(105%);
+    }
+    
+    .block10  img:hover{
+        opacity: 1.1;
+     transform: scale(105%);
+    }
+
+            .block1 img{
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+    }
+
+    .block2 img{
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .block3 img{
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .block4 img{
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .block5 img{
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .block6 img{
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+    }
+
+        .block10 img{
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .block7 img{
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .block8 img{
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .block9 img{
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+    }
+
+        .block1 h2{
+        color: rgb(12, 10, 72);
+				display: grid;
+         position: absolute;
+         top: 5%;
+         left: 40%;
+         opacity: 0.6;
+    }
+
+    .block2 h2{
+        
+        color: rgb(12, 10, 72);
+				display: block;
+         position: absolute;;
+         top: 5%;
+         left: 40%;
+         opacity: 0.6;
+    }
+    
+    .block3 h2 {
+        color: rgb(12, 10, 72);
+				display: block;
+         position: absolute;;
+         top: 5%;
+         left: 40%;
+         opacity: 0.6;
+    }
+    
+    .block4 h2 {
+        color: rgb(12, 10, 72);
+				display: block;
+         position: absolute;;
+         top: 5%;
+         left: 40%;
+         opacity: 0.6;
+    }
+    
+    .block5 h2{
+        color: rgb(12, 10, 72);
+				display: block;
+         position: absolute;;
+         top: 5%;
+         left: 40%;
+         opacity: 0.6;
+    }
+    
+    .block6 h2{
+        color: rgb(12, 10, 72);
+				display: block;
+         position: absolute;;
+         top: 5%;
+         left: 40%;
+         opacity: 0.6;
+    }
+
+        .block7 h2 {
+        color: rgb(12, 10, 72);
+				display: block;
+         position: absolute;;
+         top: 5%;
+         left: 40%;
+         opacity: 0.6;
+    }
+    
+    .block8 h2 {
+        color: rgb(12, 10, 72);
+				display: block;
+         position: absolute;;
+         top: 5%;
+         left: 40%;
+         opacity: 0.6;
+    }
+    
+    .block9 h2{
+        color: rgb(12, 10, 72);
+				display: block;
+         position: absolute;;
+         top: 5%;
+         left: 40%;
+         opacity: 0.6;
+    }
+    
+    .block10 h2{
+        color: rgb(12, 10, 72);
+				display: block;
+         position: absolute;;
+         top: 5%;
+         left: 40%;
+         opacity: 0.6;
+    }
+
+
+
+       @media screen and (max-width: 840px){
+                    #grid {
+      display: grid;
+       grid-template-columns: repeat(2, minmax(250px, 1fr)) ;
+       grid-template-rows:repeat(6, minmax(250px, 1fr)) ;
+       gap: 40px;
+       grid-template-areas:
+      "a a"
+      "b c "
+      "b d "
+      "e f"
+      "g h"
+      "j k";
+    }
+    
+       }
+
+        @media screen and (max-width: 600px){
+
+          #grid {
+      display: grid;
+       grid-template-columns: repeat(1, minmax(300px, 1fr)) ;
+       grid-template-rows:repeat(6, minmax(300px, 1fr)) ;
+       gap: 40px;
+       grid-template-areas:
+      "a"
+      "b"
+      "c "
+      "d"
+      "e"
+      "f"
+      "g"
+      "h"
+      "j"
+      "k";
+    }
+            
+
+        }
